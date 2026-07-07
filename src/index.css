@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0B5ED7;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #084298;
+}
+
+/* Reusable Classes */
+.section-title {
+  @apply text-4xl font-bold text-center text-primary mb-6;
+}
+
+.section-subtitle {
+  @apply text-center text-gray-600 max-w-3xl mx-auto mb-12;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-lg p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+}
+
+.btn-primary {
+  @apply bg-primary text-white
